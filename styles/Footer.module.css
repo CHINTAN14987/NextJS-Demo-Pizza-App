@@ -1,27 +1,43 @@
-.container{
-    
-    background-color: #222;
-    display: flex;
+.container {
+  background-color: #222;
+  display: flex;
 }
-.item{
-    flex: 1;
-    position: relative;
-    display: flex;
+.item {
+  flex: 1;
+  position: relative;
+  display: flex;
 }
-.item:last-child{
-    flex: 2;
-    padding: 50px;
-    justify-content: space-between;
+.item:last-child {
+  flex: 2;
+  padding: 50px;
+  justify-content: space-between;
 }
-.card{flex: 1;
-padding: 0 20px;}
-.title{
-    font-size: 18px;
-    color:#b7903c
+.card {
+  flex: 1;
+  padding: 0 20px;
 }
-.text{
-    color:lightgray;
+.title {
+  font-size: 18px;
+  color: #b7903c;
 }
-.motto{
-    color: rgb(211,211,211)
+.text {
+  color: lightgray;
+}
+.motto {
+  color: rgb(211, 211, 211);
+}
+
+@media screen and (max-width: 480px) {
+  .item:nth-child(1) {
+    display: none;
+  }
+  .item:nth-child(2) {
+    flex-direction: column;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .text {
+    font-size: 20px;
+  }
 }
